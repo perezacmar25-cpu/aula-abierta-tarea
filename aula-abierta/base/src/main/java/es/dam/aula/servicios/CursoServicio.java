@@ -66,7 +66,7 @@ public class CursoServicio {
     }
 
     public List<String>buscarPorNivelYHoras(String preferente, String alternativo, int minimo){
-        return cursoRepository.findByNivelOrNivelAndHorasIsGreatherThanEqualOrderById(preferente,alternativo,minimo)
+        return cursoRepository.findByNivelOrNivelAndHorasIsGreaterThanEqualOrderById(preferente,alternativo,minimo)
                 .stream()
                 .map(curso -> curso.getId())
                 .toList();

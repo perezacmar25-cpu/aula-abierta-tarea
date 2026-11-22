@@ -1,10 +1,21 @@
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/Area.java
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/AulaApplication.java
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/Curso.java
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/Diagnostico.java
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/Etapa1Controller.java
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/Etapa2Controller.java
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/Etapa3Controller.java
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/Leccion.java
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/ResumenCurso.java
-/Users/lmlopez/Library/CloudStorage/GoogleDrive-luismi.lopez@triana.salesianos.edu/Mi unidad/DOCENCIA/2026-2027/01_AD-PSP/UD2_Spring Data JPA/Ejercicios/Ejercicios propuestos/Aula Abierta/Aula_Abierta_Spring_Data_JPA/base/src/main/java/es/dam/aula/Vistas.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Area.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\AulaApplication.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Curso.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Diagnostico.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\EntornoDemo.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\EntornoLocal.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Etapa1Controller.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Etapa2Controller.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Etapa3Controller.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Etapa4Controller.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\interfaces\Entorno.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Leccion.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Modo.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\repositorios\RepositorioArea.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\repositorios\RepositorioCurso.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\ResumenCurso.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\servicios\AreaServicio.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\servicios\CursoServicio.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\servicios\LeccionServicio.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\servicios\LecturaServicio.java
+C:\Users\mario\aula-abierta-tarea\aula-abierta\base\src\main\java\es\dam\aula\Vistas.java

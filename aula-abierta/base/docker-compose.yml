@@ -1,0 +1,10 @@
+services:
+  postgres:
+    image: postgres:16
+    container_name: aula-postgres
+    environment:
+      POSTGRES_DB: aula
+      POSTGRES_USER: ${AULA_USER}
+      POSTGRES_PASSWORD: ${AULA_PASS}
+    ports:
+      - "5432:5432"
