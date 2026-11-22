@@ -1,0 +1,20 @@
+### Alta de C7
+POST http://localhost:8080/cursos
+Content-Type: application/json
+
+{"id":"C7","titulo":"Git básico","nivel":"BASICO","horas":6,"areaId":"A"}
+
+### Consultar C7
+GET http://localhost:8080/cursos/C7
+
+### Consultar X (debe dar 404)
+GET http://localhost:8080/cursos/X
+
+### Retirar C1
+DELETE http://localhost:8080/cursos/C1
+
+### Consultar C1 (debe dar 404)
+GET http://localhost:8080/cursos/C1
+
+### Diagnóstico
+GET http://localhost:8080/diagnostico/c1
