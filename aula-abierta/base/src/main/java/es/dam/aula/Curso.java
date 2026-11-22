@@ -20,7 +20,8 @@ public class Curso {
     private String nivel;
     private int horas;
 
-    @ManyToOne
+    //Las consultas de los cursos no necesitan el área, por lo tanto lo dejamos en lazy para no cargar datos innecesarios.
+    @ManyToOne(fetch = FetchType.LAZY)
     @JoinColumn(name = "area_id")
     @ToString.Exclude
     private Area area;

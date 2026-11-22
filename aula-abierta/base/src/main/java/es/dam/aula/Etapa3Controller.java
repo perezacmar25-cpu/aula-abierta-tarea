@@ -1,24 +1,32 @@
 package es.dam.aula;
 
+import es.dam.aula.servicios.LecturaServicio;
+import lombok.RequiredArgsConstructor;
 import org.springframework.web.bind.annotation.*;
 import org.springframework.web.server.ResponseStatusException;
 import org.springframework.http.HttpStatus;
 
 @RestController
+@RequiredArgsConstructor
 public class Etapa3Controller {
+
+    private final LecturaServicio lecturaServicio;
 
     @GetMapping("/lectura/curso/{id}")
     public Object cursoCompleto(@PathVariable String id, @RequestParam(defaultValue = "join") String plan) {
-        throw new ResponseStatusException(HttpStatus.NOT_IMPLEMENTED);
+        return lecturaServicio.detalle(id,plan);
     }
 
     @GetMapping("/lectura/area/{id}")
     public Object programa(@PathVariable String id) {
-        throw new ResponseStatusException(HttpStatus.NOT_IMPLEMENTED);
+
+        return lecturaServicio.programaPorId(id);
     }
 
     @GetMapping("/lectura/programas")
     public Object programas(@RequestParam String nombre) {
-        throw new ResponseStatusException(HttpStatus.NOT_IMPLEMENTED);
+        return lecturaServicio.programasPorNombre(nombre);
     }
+
+
 }

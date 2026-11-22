@@ -10,6 +10,8 @@ import java.util.Set;
 @Setter
 @NoArgsConstructor
 @ToString
+@NamedEntityGraph(name = "Area.programa", attributeNodes = @NamedAttributeNode(value = "cursos", subgraph = "cursos-lecciones"),
+        subgraphs = @NamedSubgraph(name = "cursos-lecciones", attributeNodes = @NamedAttributeNode("lecciones")))
 public class Area {
 
     @Id

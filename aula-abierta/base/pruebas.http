@@ -35,3 +35,26 @@ GET http://localhost:8080/catalogo/prioridad?preferente=BASICO&alternativo=MEDIO
 ### Resumen → 200, C1 (10 h) y C4 (25 h), solo id, titulo y horas
 GET http://localhost:8080/catalogo/resumen?ids=C4,C1,X
 
+
+###Etapa-3
+
+### Detalle C1 plan join → 200 {"id":"C1","areaId":"A","lecciones":["L1","L2"]}
+GET http://localhost:8080/lectura/curso/C1?plan=join
+
+### Detalle C1 plan derivado → igual
+GET http://localhost:8080/lectura/curso/C1?plan=derivado
+
+### Detalle C1 plan declarado → igual
+GET http://localhost:8080/lectura/curso/C1?plan=declarado
+
+### Detalle C5 plan join → 200 con lecciones []
+GET http://localhost:8080/lectura/curso/C5?plan=join
+
+### Programa área A → 200 con C1 (L1, L2), C2 (L3) y C3 (L4)
+GET http://localhost:8080/lectura/area/A
+
+### Programa área X → 404
+GET http://localhost:8080/lectura/area/X
+
+### Programas por nombre → 200, lista con B: C4 (L5) y C5 ([])
+GET http://localhost:8080/lectura/programas?nombre=Diseño
