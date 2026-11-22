@@ -14,6 +14,8 @@ import org.springframework.stereotype.Service;
 import org.springframework.web.bind.annotation.RequestBody;
 import org.springframework.web.server.ResponseStatusException;
 
+import java.util.List;
+
 @Service
 public class CursoServicio {
 
@@ -48,6 +50,33 @@ public class CursoServicio {
                 .orElseThrow(() -> new ResponseStatusException(HttpStatus.NOT_FOUND, "Curso no encontrado"));
                 cursoRepository.delete(curso);
     }
+
+    public List<String>buscarPorNivel (String nivel){
+        return cursoRepository.findByNivelOrderByIdAsc(nivel)
+                .stream()
+                .map(curso -> curso.getId())
+                .toList();
+    }
+
+    public List<String>buscarPorTexto(String texto){
+        return cursoRepository.findByTituloContainingIgnoreCaseOrderByIdAsc(texto)
+                .stream()
+                .map(curso -> curso.getTitulo())
+                .toList();
+    }
+
+    public List<String>buscarPorNivelYHoras(String preferente, String alternativo, int minimo){
+        return cursoRepository.findByNivelOrNivelAndHorasIsGreatherThanEqualOrderById(preferente,alternativo,minimo)
+                .stream()
+                .map(curso -> curso.getId())
+                .toList();
+    }
+
+    public List<ResumenCurso>resumenCursos(List<String>ids){
+        return cursoRepository.resumen(ids);
+    }
+
+
 
 
 }

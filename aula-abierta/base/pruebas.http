@@ -18,3 +18,20 @@ GET http://localhost:8080/cursos/C1
 
 ### Diagnóstico
 GET http://localhost:8080/diagnostico/c1
+
+###Etapa-2
+### Por nivel → 200 ["C2","C5"]
+GET http://localhost:8080/catalogo/nivel?nivel=MEDIO
+
+### Por título → 200 ["C1","C2","C3"]
+GET http://localhost:8080/catalogo/titulo?texto=jAvA
+
+### Título sin coincidencias → 200 []
+GET http://localhost:8080/catalogo/titulo?texto=zzz
+
+### Prioritario → 200 ["C1","C2","C4"]
+GET http://localhost:8080/catalogo/prioridad?preferente=BASICO&alternativo=MEDIO&minimo=20
+
+### Resumen → 200, C1 (10 h) y C4 (25 h), solo id, titulo y horas
+GET http://localhost:8080/catalogo/resumen?ids=C4,C1,X
+
